@@ -20,15 +20,18 @@
     "/login" : {
       "post" : {
         "tags" : [ "Authentication" ],
-        "summary" : "Add a new pet to the store",
-        "operationId" : "addPet",
+        "summary" : "Authenticate user",
+        "operationId" : "login_user",
         "responses" : {
           "405" : {
-            "description" : "Invalid input"
+            "description" : "Incorrect email or password"
+          },
+          "407" : {
+            "description" : "Unauthorized user"
           }
         },
         "security" : [ {
-          "petstore_auth" : [ "write:pets", "read:pets" ]
+          "kdbs_auth" : [ "write:auth", "read:auth" ]
         } ],
         "requestBody" : {
           "$ref" : "#/components/requestBodies/Pet"
