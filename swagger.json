@@ -3,42 +3,23 @@
   "servers" : [ {
     "description" : "SwaggerHub API Auto Mocking",
     "url" : "https://virtserver.swaggerhub.com/aliuadepoju/kdbs/1.0.0"
+  }, {
+    "description" : "SwaggerHub API Auto Mocking",
+    "url" : "https://kdbs.aliuadepoju.com/1"
   } ],
   "info" : {
-    "description" : "This is a sample Petstore server.  You can find\nout more about Swagger at\n[http://swagger.io](http://swagger.io) or on\n[irc.freenode.net, #swagger](http://swagger.io/irc/).\n",
+    "description" : "Kaduna Bureau of Statistics (KDBS) Databank API documentation\n",
     "version" : "1.0.0",
     "title" : "KDBS DataBank",
-    "termsOfService" : "http://swagger.io/terms/",
+    "termsOfService" : "https://kdbs.aliuadepoju.com/terms/",
     "contact" : {
-      "email" : "apiteam@swagger.io"
-    },
-    "license" : {
-      "name" : "Apache 2.0",
-      "url" : "http://www.apache.org/licenses/LICENSE-2.0.html"
+      "email" : "wuyi.adepoju@gmail.com"
     }
   },
-  "tags" : [ {
-    "name" : "pet",
-    "description" : "Everything about your Pets",
-    "externalDocs" : {
-      "description" : "Find out more",
-      "url" : "http://swagger.io"
-    }
-  }, {
-    "name" : "store",
-    "description" : "Access to Petstore orders"
-  }, {
-    "name" : "user",
-    "description" : "Operations about user",
-    "externalDocs" : {
-      "description" : "Find out more about our store",
-      "url" : "http://swagger.io"
-    }
-  } ],
   "paths" : {
-    "/pet" : {
+    "/login" : {
       "post" : {
-        "tags" : [ "pet" ],
+        "tags" : [ "Authentication" ],
         "summary" : "Add a new pet to the store",
         "operationId" : "addPet",
         "responses" : {
